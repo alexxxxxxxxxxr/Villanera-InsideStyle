@@ -579,83 +579,257 @@ padding: 2rem 0;
     width: 100%;
     max-width: 150rem;
     margin: 0 auto;
-    padding: 0 5rem;
+    padding: 5rem 0;
 }
-.package_theme-right{
-    width: 100rem;
+.package_theme{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:5rem;
+    display: flex;   
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;   
+}
 
-}
 .package_wrapper h2{
     color: var(--clr-primary);
     font-size: 5rem;
     font-weight: 700;
     text-align: center;
+    margin: 2rem 0;
 }
 .package_theme h2{
-margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 .package_theme p{
     text-align: justify;
     margin-bottom: 1rem;
-}
-.package_theme{
-    padding: 3rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: var(--clr-light);
-    background-size: cover;
-}
-.package_theme img{
-    padding: 2rem;
+}    
+.package_theme-right{ 
     width: 100%;
 }
-/* reversing */
+.package_theme img{
+    width: 100%;
+   margin: 2rem 0;
+}
 .package_theme:nth-child(odd){
     flex-direction: row-reverse;
-    background-color: var(--clr-semilight);
-
+    background-color: var(--clr-semilight);  
+    box-shadow: 0 0 0 100vmax var(--clr-semilight);  
+    clip-path: inset(0 -100vmax);
 }
+
 /* CATALOG MOBILE PAGE */
 /* CATALOG MOBILE PAGE */
 @media screen and (max-width: 520px){
     .catalogBanner_bg{
-            height: 50vh; 
-        } 
-        .catalogBanner h1{
-            font-size: 5rem;
-        }
-        .catalogBanner p{
-            font-size: 1rem;
-        }
-        .package_wrapper h2{
-            font-size: 3rem;
-        }
-        .package_theme-right{
-            width: 50rem;  
-        }
-        .package_theme{
-            padding: 3rem;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            background-color: var(--clr-light);
-            background-size: cover;
-        }
-        .package_theme img{
-            display: none;
-        }
+        height: 50vh;
+    } 
+    .catalogBanner h1{
+        font-size: 5rem;
+    }
+    .catalogBanner p{
+        font-size: 2rem;
+    }
+    .package_wrapper h2{
+        font-size: 3rem;
+    }
+
+    .package_wrapper{
+        text-align: center;
+    }
+    .package_theme{
+        display: grid;
+        grid-template-columns: 1fr;  
+        grid-gap: 1rem ;
+        margin: 0 3rem;
         
-        
+    }
+    .package_theme-left{
+        max-width: 45rem;
+        max-height: 45rem;
+    }
+    .package_theme:nth-child(odd){
+        flex-direction: row;
     
 }
-/* CONTACTS PAGE */
-.container{
-    width: 100%;
-    max-width: 150rem;
-    margin: 0 auto;
-    padding: 0 5rem; 
+
 }
+/* UPDATES PAGE */
+
+    .updates{
+        padding: 5rem 0;
+    }
+    .updatesBanner_wrapper{
+        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5rem ;
+        align-items: center;  
+        margin: 0;
+    }
+
+    .updatesBanner_wrapper-left{
+        text-align: center;
+        width: 100%;
+    }
+    .updatesBanner_wrapper h1{
+        color: var(--clr-primary);
+        font-size: 7rem;
+        font-weight: 700;    
+        }
+    .updatesBanner_wrapper-left p{
+        text-align: justify;
+        font-weight: 500;
+    }
+    .updatesBanner_wrapper-right {
+        max-width: 100%;  
+        /* margin-left: 10rem; */
+    }
+
+/* UPDATES BUILDING DESIGNS */    
+    .updatesDesigns_wrapper{
+        display: grid;
+        flex-direction: row;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 2rem;
+        margin: 5rem 0;
+    }
+    
+    .updatesDesigns_wrapper-main h3{
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--clr-secondary); 
+        margin-left: 3rem;
+        margin-bottom: 3rem;
+    }
+    .updatesDesigns_wrapper-left{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+      
+    }
+    .Designs_card{
+        background-color: var(--clr-semilight);   
+        padding: 4rem;        
+        
+    }  
+    .Designs_card h3{
+        color: var(--clr-dark);
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    .Designs_card p{   
+        
+        text-align: justify;
+        justify-content: center;
+        padding: 0 3rem ;
+        margin-bottom: 1rem;
+    }
+    .Designs_card a{   
+    color: var(--clr-dark);
+    font-size: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    }
+    .updatesDesigns_wrapper-right{
+        justify-content: space-between;   
+    }
+    .updatesDesigns_wrapper-right h3{
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--clr-secondary);
+        margin-bottom: 3rem;   
+    } 
+    .updatesDesigns_wrapper-right  ul{
+        margin-right: 5rem;   
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .updatesDesigns_wrapper-right  ul li{
+        
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+}
+/* RECENT PROJECTS */
+    .updatesRecent{
+        padding: 3rem 0;
+    }
+    .updatesRecent h3{  
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--clr-primary);
+        margin-bottom: 3rem;
+    }
+    .updatesRecent_wrapper{   
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2rem;
+        margin: 3rem 0;
+    }
+    .updatesRecent_wrapper-projects{
+     justify-content: space-between;
+     gap: 2rem;
+    }
+    .updatesRecent_wrapper-projects img{
+        width: 100%;
+     }
+    .updatesRecent_wrapper-projects ul{ 
+            display: flex;  
+            justify-content: space-between;
+            max-width: 100%; 
+    }
+    .updatesRecent_wrapper-projects ul li{
+            font-size: 2rem;
+            font-weight: 700;
+            margin-right: 2rem;
+            }
+    .updatesRecent_wrapper-projects ul li span{
+                margin: 0 2rem;
+            }
+
+@media screen and (max-width: 520px) {
+    .updatesBanner_wrapper{
+        display: grid;
+        grid-template-columns: 1fr;   
+        display: flex;
+        flex-direction: column; 
+    }
+    .updatesBanner_wrapper h1{
+        font-size: 5rem;
+    }
+    .updatesDesigns_wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    .updatesDesigns_wrapper-left{         
+        grid-template-columns: 1fr;
+    }
+    .Designs_card{
+    font-size: 2rem;
+    padding: 2rem;         
+    }  
+    .updatesRecent_wrapper{   
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    } 
+    .updatesDesigns_wrapper-right  ul li{  
+        margin-bottom: 1rem;   
+    }
+   
+    }
+
+/* CONTACTS PAGE */
+
 .contactInfo_banner h1{
     color: var(--clr-primary);
     font-size: 5rem;
@@ -676,10 +850,11 @@ margin-bottom: 2rem;
 .contactInfo_wrapper-left{
     display: flex;
     flex-direction: column;
-    padding: 5rem 0;
+    gap: 5rem;
+    
 
 }
-.contactInfo_wrapper-left input{
+.contactInfo_wrapper-left input {
     background-color: transparent;
     border-color: transparent;
 
@@ -689,12 +864,15 @@ margin-bottom: 2rem;
     border-color: transparent;
 
 }
-.contactInfo_wrapper-left a{
+.contactInfo_wrapper-left ul li{
+    /* display: flex;
+    flex-direction: row;
+    align-content: center; */
     margin: 5rem;
 
 }
-.contactInfo_wrapper-left input::after,
-.contactInfo_wrapper-left textarea::after{
+.contactInfo_wrapper-left input,
+.contactInfo_wrapper-left textarea{
     display: inline-block;
     position: relative;
     content: "";
@@ -704,8 +882,6 @@ margin-bottom: 2rem;
     bottom: 1rem;
 
 }
-
-
 .contactInfo_wrapper-right{
     background-color: var(--clr-dark);
     color: var(--clr-light);
@@ -743,33 +919,6 @@ margin-bottom: 2rem;
     background-color: var(--clr-semilight);
     color: var(--clr-dark);
 }
-
-/* UPDATES PAGE */
-
-    .updatesBanner_wrapper{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 3rem;
-       
-    }
-
-    .updatesBanner_wrapper-left{
-        text-align: center;
-        max-width: 70rem;
-        h1{
-        color: var(--clr-primary);
-        font-size: 5rem;
-        font-weight: 700;    
-        }
-        P{
-            text-align: justify;
-        }
-    }
-    .updatesBanner_wrapper-right{
-        max-width: 80rem;
-        height: auto;
-    }
 
 /* REPEATABLE/COMPONENTS */
     .btn{
