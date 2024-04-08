@@ -120,7 +120,7 @@
   img {
     max-width: 100%;
   }
-  /* margin */
+/* margin */
   .container {
     width: 100%;
     max-width: 150rem;
@@ -128,29 +128,29 @@
     padding: 0 5rem;
   }
 /* header */
-.header{
-    padding: 2rem 0;
-    background-color: var(--clr-semilight);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
-.header_wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.header_nav {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-}
-.header .header_wrapper ul li a{
-font-weight: 700;
-color: var(--clr-dark);
-font-size: 2rem;
-}
-.header .header_wrapper ul li a:hover{
-    color: var(--clr-primary);
+    .header{
+        padding: 2rem 0;
+        background-color: var(--clr-semilight);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     }
+    .header_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header_nav {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .header .header_wrapper ul li a{
+    font-weight: 700;
+    color: var(--clr-dark);
+    font-size: 2rem;
+    }
+    .header .header_wrapper ul li a:hover{
+        color: var(--clr-primary);
+        }
 /* mobile responsive*/
     .header .toggle_menu span{
         color: var(--clr-primary);
@@ -214,7 +214,7 @@ font-size: 2rem;
     }
     .top span{
         font-size: 1.7rem;
-        font-weight: 100;
+        font-weight: 500;
         margin-bottom: 5rem;
     }
     .top h4{
@@ -266,6 +266,9 @@ font-size: 2rem;
     }
     .homeBanner_left p{
         margin-bottom: 5rem;
+    }
+    .homeBanner_left a{
+        color: var(--clr-dark);
     }
     .homeBanner__right{
         display: flex;
@@ -381,6 +384,7 @@ font-size: 2rem;
 .catalogSection_card-content p{
     margin-bottom: 1rem;
 }
+
 /* catalog section mobile */
 @media screen and (max-width: 520px) {
     .catalogSection h2::after{
@@ -411,7 +415,6 @@ font-size: 2rem;
     margin-bottom: 1rem;
 }
 
-
 /* FOOTER */
 .footer{
 background-color: var(--clr-dark);
@@ -429,13 +432,14 @@ padding: 2rem 0;
 .footer ul li a{
     color: var(--clr-semilight);
 }
-/* footer mobile */
+
+/* FOOTER MOBILE */
 @media screen and (max-width: 520px) {
-        .footer_wrapper{
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
+    .footer_wrapper{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 /* ABOUT PAGE BANNER */
 .aboutBanner{
@@ -463,7 +467,6 @@ padding: 2rem 0;
 .aboutBanner_right ul {
     display: flex;
     gap: 1rem;
-    /* margin-top: 2rem; */
 }
 .aboutBanner_right ul li a{
     color: var(--clr-dark);   
@@ -482,6 +485,7 @@ padding: 2rem 0;
     bottom: .5rem;
     right: 1rem;
 }
+
 /* ABOUT BANNER MOBILE MEDIA */
 @media screen and (max-width: 520px){
     .aboutBanner_left{
@@ -495,6 +499,7 @@ padding: 2rem 0;
         font-size: 1.5rem;
     }
 }
+
 /* ABOUT LATEST SECTION */
 .aboutLatest{
     padding: 5rem 0;
@@ -503,7 +508,7 @@ padding: 2rem 0;
 .aboutLatest_wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
-    gap: 3rem;
+    grid-gap: 3rem;
     align-items: center;
     justify-content: space-between;
 }
@@ -540,12 +545,14 @@ padding: 2rem 0;
     font-weight: 650;
     text-align: justify;
 }
+/* ABOUT MOBILE */
 @media screen and (max-width: 520px){
     .aboutLatest_wrapper{
         grid-template-columns: 1fr;
         gap: .5rem;
         }
     }
+
 /* CATALOG BANNER */
 .catalogBanner_bg{
     background: linear-gradient(
@@ -563,15 +570,15 @@ padding: 2rem 0;
     justify-content: center;
     text-align: center;
 }
-
 .catalogBanner h1{
     color: var(--clr-primary);
-    font-size: 7rem;
+    font-size: 8rem;
     font-weight: 700;
 }
 .catalogBanner p{
     line-height: 2.5rem;
     font-size: 3rem;
+    font-weight: 500;
 }
 
 /* CATALOG INTERIOR DESIGN PACKAGE */
@@ -584,42 +591,44 @@ padding: 2rem 0;
 .package_theme{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap:5rem;
-    display: flex;   
+    grid-gap: 8rem;
+    gap: 8rem;
     justify-content: space-between;
-    align-content: space-between;
-    align-items: center;   
 }
-
-.package_wrapper h2{
+.package_wrapper h1{
     color: var(--clr-primary);
-    font-size: 5rem;
+    font-size: 8rem;
     font-weight: 700;
     text-align: center;
     margin: 2rem 0;
 }
-.package_theme h2{
-    margin-bottom: 2rem;
+.package_theme h1{
+    font-size: 6rem;
+    margin-bottom: 3rem;
 }
 .package_theme p{
+    font-size: 2rem;
+    font-weight: 500;
     text-align: justify;
-    margin-bottom: 1rem;
 }    
 .package_theme-right{ 
+    align-content: center;
     width: 100%;
 }
 .package_theme img{
     width: 100%;
-   margin: 2rem 0;
+    margin: 3rem 0;
 }
-.package_theme:nth-child(odd){
+.package_theme:nth-child(odd){    
     flex-direction: row-reverse;
     background-color: var(--clr-semilight);  
     box-shadow: 0 0 0 100vmax var(--clr-semilight);  
     clip-path: inset(0 -100vmax);
 }
+.package_theme:nth-child(odd) .package_theme-left{ 
+    order: 2;
+}
 
-/* CATALOG MOBILE PAGE */
 /* CATALOG MOBILE PAGE */
 @media screen and (max-width: 520px){
     .catalogBanner_bg{
@@ -631,12 +640,14 @@ padding: 2rem 0;
     .catalogBanner p{
         font-size: 2rem;
     }
-    .package_wrapper h2{
+    .package_wrapper h1{
         font-size: 3rem;
     }
-
     .package_wrapper{
         text-align: center;
+    }
+    .package_theme:nth-child(even){
+        flex-direction: column-reverse;
     }
     .package_theme{
         display: grid;
@@ -648,30 +659,27 @@ padding: 2rem 0;
     .package_theme-left{
         max-width: 45rem;
         max-height: 45rem;
-    }
-    .package_theme:nth-child(odd){
-        flex-direction: row;
-    
+    }   
 }
 
-}
 /* UPDATES PAGE */
-
     .updates{
         padding: 5rem 0;
     }
-    .updatesBanner_wrapper{
+    .updates p{
+        
+    }
+    .updatesBanner_wrapper{     
         display: flex;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 5rem ;
+        grid-gap: 10rem ;
         align-items: center;  
         margin: 0;
     }
-
     .updatesBanner_wrapper-left{
         text-align: center;
-        width: 100%;
+        max-width: 100%;
     }
     .updatesBanner_wrapper h1{
         color: var(--clr-primary);
@@ -680,10 +688,11 @@ padding: 2rem 0;
         }
     .updatesBanner_wrapper-left p{
         text-align: justify;
-        font-weight: 500;
+        font-weight: 700;
     }
     .updatesBanner_wrapper-right {
-        max-width: 100%;  
+        max-width: 100%;
+        text-align: right;
         /* margin-left: 10rem; */
     }
 
@@ -695,7 +704,6 @@ padding: 2rem 0;
         grid-gap: 2rem;
         margin: 5rem 0;
     }
-    
     .updatesDesigns_wrapper-main h3{
         font-size: 3rem;
         font-weight: 700;
@@ -707,12 +715,10 @@ padding: 2rem 0;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 2rem;
-      
     }
     .Designs_card{
         background-color: var(--clr-semilight);   
-        padding: 4rem;        
-        
+        padding: 4rem;                
     }  
     .Designs_card h3{
         color: var(--clr-dark);
@@ -722,7 +728,6 @@ padding: 2rem 0;
         text-align: center;
     }
     .Designs_card p{   
-        
         text-align: justify;
         justify-content: center;
         padding: 0 3rem ;
@@ -734,9 +739,6 @@ padding: 2rem 0;
     display: flex;
     justify-content: flex-end;
     }
-    .updatesDesigns_wrapper-right{
-        justify-content: space-between;   
-    }
     .updatesDesigns_wrapper-right h3{
         font-size: 3rem;
         font-weight: 700;
@@ -744,19 +746,16 @@ padding: 2rem 0;
         margin-bottom: 3rem;   
     } 
     .updatesDesigns_wrapper-right  ul{
-        margin-right: 5rem;   
+        margin-right: 10rem;   
         font-size: 2rem;
         font-weight: 700;
     }
     .updatesDesigns_wrapper-right  ul li{
-        
         margin-bottom: 2rem;
         display: flex;
         justify-content: space-between;
     }
 
-
-}
 /* RECENT PROJECTS */
     .updatesRecent{
         padding: 3rem 0;
@@ -782,19 +781,20 @@ padding: 2rem 0;
         width: 100%;
      }
     .updatesRecent_wrapper-projects ul{ 
-            display: flex;  
-            justify-content: space-between;
-            max-width: 100%; 
+        display: flex;  
+        justify-content: space-between;
+        max-width: 100%; 
     }
     .updatesRecent_wrapper-projects ul li{
-            font-size: 2rem;
-            font-weight: 700;
-            margin-right: 2rem;
-            }
+        font-size: 2rem;
+        font-weight: 700;
+        margin-right: 2rem;
+    }
     .updatesRecent_wrapper-projects ul li span{
-                margin: 0 2rem;
-            }
+        margin: 0 2rem;
+    }
 
+/* UPDATES MOBILE */
 @media screen and (max-width: 520px) {
     .updatesBanner_wrapper{
         display: grid;
@@ -825,12 +825,16 @@ padding: 2rem 0;
     .updatesDesigns_wrapper-right  ul li{  
         margin-bottom: 1rem;   
     }
-   
     }
 
 /* CONTACTS PAGE */
-
-.contactInfo_banner h1{
+.contactInfo{
+    margin: 5rem 0;
+}
+.contactInfo_wrapper p{
+    font-size: 2rem;
+}
+.contactInfo_wrapper h1{
     color: var(--clr-primary);
     font-size: 5rem;
     font-weight: 700;
@@ -838,86 +842,117 @@ padding: 2rem 0;
 .contactInfo_banner{
     margin-bottom: 5rem;
 }
-.contactInfo_wrapper{
-    /* display: grid;
-    grid-template-columns: 1fr 1fr; */
-    padding: 5rem 0;
+/* dlfsigdskhb */
+.contactInfo_wrapper {
     display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10rem; 
     flex-direction: row;
     align-content: space-between;
-    gap: 5rem ;
+    justify-content: space-between;
 }
+/* contact us */
 .contactInfo_wrapper-left{
     display: flex;
     flex-direction: column;
-    gap: 5rem;
-    
-
 }
+.contactInfo_wrapper-left textarea,
 .contactInfo_wrapper-left input {
-    background-color: transparent;
-    border-color: transparent;
-
+    font-size: 2rem;
+    margin-bottom: 2rem; 
+    border: none;
+    border-bottom: 1px solid var(--clr-dark);
+    outline: none;
+    max-width: 70rem;
+    min-width: 70rem; 
 }
 .contactInfo_wrapper-left textarea{
-    background-color: transparent;
-    border-color: transparent;
-
+    min-height: 20rem;   
 }
 .contactInfo_wrapper-left ul li{
-    /* display: flex;
-    flex-direction: row;
-    align-content: center; */
     margin: 5rem;
-
 }
-.contactInfo_wrapper-left input,
-.contactInfo_wrapper-left textarea{
-    display: inline-block;
-    position: relative;
-    content: "";
-    background-color: var(--clr-dark);
-    height: .2rem;
-    width: 50rem;
-    bottom: 1rem;
-
-}
+/* }Info */
 .contactInfo_wrapper-right{
-    background-color: var(--clr-dark);
+    margin-top: 7rem;
+    justify-content: center;
+    align-content: center;
+    background: var(--clr-dark);
     color: var(--clr-light);
-    padding: 3rem;
+    padding: 5rem;
+    max-width: 100%;
+    max-height: 38rem;
 }
 .contactInfo_wrapper-right h3{
+    font-size: 3rem;
     margin-bottom: 1rem;
 }
-.right_con ul li{
-    padding: 1rem 0;
-}
-.right_con ul li a{
-    color: var(--clr-secondary);
-   }
 .contactInfo_wrapper-right p{
+    font-size: 2rem;
     padding: 1rem;
     flex-direction: row;
     text-align: left;
+}
+.right_con ul li{
+    padding: 1rem 0;
+    margin-right: 1rem;
+}
+.right_con ul li a{
+    font-size: 2rem;
+    color: var(--clr-secondary);
    }
 .right_con{
-    display: flex;
-    
+    display: flex; 
+    align-items: center;
 }
+
 .btnSend{
+    margin: 0 2rem;
+    padding: .5rem;
+    text-align: center;
     background-color: var(--clr-dark);
     border: transparent;
     border-radius: 10rem;
-    padding: .3rem 20rem;
     color: var(--clr-light);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     font-weight: 700;
     letter-spacing: .5rem;
+    max-width: 100%;
 }
 .btnSend:hover{
     background-color: var(--clr-semilight);
     color: var(--clr-dark);
+}
+
+/* CONTACTS MOBILE */
+@media screen and (max-width: 520px) {
+    
+    .contactInfo_wrapper-left textarea,
+    .contactInfo_wrapper-left input {
+        font-size: 1.3rem;
+        max-width: 38rem;
+        min-width: 38rem;
+    }
+    .contactInfo_wrapper h1{
+        font-size: 3rem; 
+    }
+    .contactInfo_banner p{
+    font-size: 1.3rem;
+    }
+    .contactInfo_wrapper-right{
+        padding: 3rem;
+        justify-content: center;
+    }
+    .contactInfo_wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+    }
+    .btnSend{
+        justify-content: center;
+        align-content: center;
+    }
 }
 
 /* REPEATABLE/COMPONENTS */
@@ -941,6 +976,6 @@ padding: 2rem 0;
     .btn-nobg{
         color: var(--clr-dark);
     }
-    .btn-nobg :hover{
+    .btn-nobg:hover{
         color: var(--clr-primary);
     }
